@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [mode, setMode] = useState("blue-500");
+  const [mode, setMode] = useState("blue-300");
   const [msg, setMsg] = useState(null);
   const toggleMode = () => {
     if (mode === "blue-300") {
@@ -15,7 +15,7 @@ function App() {
       setMsg("Dark-Mode Unabled");
       document.body.style.backgroundColor = "#4b6ccb";
     } else {
-      setMode("blue-500");
+      setMode("blue-300");
       setMsg("Light-Mode Unabled");
       document.body.style.backgroundColor = "white";
     }
