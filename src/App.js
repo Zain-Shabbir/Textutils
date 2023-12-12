@@ -10,7 +10,7 @@ function App() {
   const [mode, setMode] = useState("blue-500");
   const [msg, setMsg] = useState(null);
   const toggleMode = () => {
-    if (mode === "blue-500") {
+    if (mode === "blue-300") {
       setMode("blue-900");
       setMsg("Dark-Mode Unabled");
       document.body.style.backgroundColor = "#4b6ccb";
