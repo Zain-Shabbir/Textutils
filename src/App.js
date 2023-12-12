@@ -4,14 +4,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("blue-500");
@@ -34,8 +27,11 @@ function App() {
         <Alert msg={msg} />
         <Routes>
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/" element = {<TextForm heading="Enter Text To Analyse" />}/>
-            
+          <Route
+            exact
+            path="/"
+            element={<TextForm heading="Enter Text To Analyse" />}
+          />
         </Routes>
       </Router>
     </>
