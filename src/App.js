@@ -20,6 +20,7 @@ function App() {
       document.body.style.backgroundColor = "white";
     }
   };
+  
   return (
     <>
       <Router>
